@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(27, 27, 27, 0.733);
+    background-color: #efefef;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(8, 131, 231);
+}
+
+header a span:hover {
+    display: block;
+}
+
+header a:hover,
+header a:focus {
+    display: block;
+    border-bottom: 1px solid rgb(8, 131, 231);
+    padding-bottom: .6em;
+}
+
+.help header a:hover,
+.help header a:focus {
+    display: block;
+    border-bottom: 1px solid red;
+    padding-bottom: .6em;
+}
+
+.help header a {
+    color: red;
+}
+
+header {
+    font-size: 1.1em;
+    padding-top: 1px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 1em 2em;
+}
+
+li {
+    text-align: center;
+}
+
+svg {
+    aspect-ratio: 1;
+    width: 1.3em;
+    fill: rgb(8, 131, 231);
+}
+
+.help svg {
+    fill: red;
+}
+
+.help {
+    color: red;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-none:hover,
+.display-none:focus{
+    display: inline;
+}
+
+section {
+    padding: 0 2em;
+}
+.welcome {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 2em;
+}
+
+.inverse {
+    background-color: rgba(255, 0, 0, 0.205);
+}
+
+.briefing {
+    padding-bottom: 1em;
+}
+
+.sales {
+    display: flex;
+    background-color: rgba(255, 238, 0, 0.282);
+    box-shadow: 1px 1px 5px rgba(255, 0, 255, 0.562);
+    gap: 3em;
+    justify-content: center;
+    color: red;
+}
+
+
+canvas {
+    padding-top: 4em;
+}
+
+.twitter-timeline {
+    padding-top: 3em;
+}
+
+.container {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.2));
+}
+
+.timeline {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 0, 0, 0.2));
+    padding-bottom: 3em;
+}
+
+footer h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.foot {
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+.foot ul {
+    text-align: start;
+}
+
+.foot a {
+    text-decoration: none;
+    color: rgba(27, 64, 187, 0.61);
+    
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+
+@media(min-width: 40em){
+    main{
+        max-width: 40em;
+        margin: 0 auto;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    header ul{
+        justify-content: center;
+        gap: 8em;
+    }
+
+    .foot{
+        flex-direction: row;
+        justify-content: center;
+        gap: 6em;
+    }
+
+    .social{
+        gap: 6em;
+    }
+
+    .twitter,
+    .facebook,
+    .bell{
+        aspect-ratio: 1;
+        width: 4em;
+        gap: 6em;
+    }
+    
+    .display-none{
+        display: inline;
+    }
+}
